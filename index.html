@@ -4,33 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Band</title>
+    <title>My Project</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link
       rel="stylesheet"
       href="./icons/themify-icons-font/themify-icons/themify-icons.css"
     />
+    <link rel="icon" href="/image/slider1/me.png" type="image/x-icon" />
   </head>
   <body>
     <div id="main">
       <div id="header">
         <!-- Begin: Nav -->
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#band">Band</a></li>
+          <li><a href="#tour">Tour</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <ul class="nav-btn-down">
                 <i class="btn-down ti-angle-down"></i>
               </ul>
             </a>
             <ul class="subnav">
-              <li><a href="">Merchandise</a></li>
-              <li><a href="">Extras</a></li>
-              <li><a href="">Media</a></li>
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
             </ul>
           </li>
         </ul>
@@ -52,7 +53,7 @@
       </div>
 
       <!-- Content -->
-      <div class="content-about">
+      <div id="band" class="content-about">
         <h2 class="content-heading">THE BAND</h2>
         <p class="content-sub-heading">We love music</p>
         <p class="content-text">
@@ -99,7 +100,7 @@
       </div>
 
       <!-- Tour -->
-      <div class="tour-date">
+      <div id="tour" class="tour-date">
         <div class="content-about">
           <h2 class="content-heading text-white">TOUR DATES</h2>
           <p class="content-sub-heading text-white">
@@ -161,7 +162,7 @@
       </div>
 
       <!-- Contact list -->
-      <div class="content-about">
+      <div id="contact" class="content-about">
         <h2 class="content-heading">CONTACT</h2>
         <p class="content-sub-heading">Fan? Drop a note!</p>
 
@@ -223,10 +224,32 @@
         </div>
         <!-- End Form -->
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+      <!-- Footer -->
+      <div id="footer">
+        <div class="footer-map">
+          <img src="/image/slider1/map.jpg" alt="Map" />
+        </div>
+
+        <div class="footer-copyright">
+          <div class="copyright-icon text-center">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-youtube"></i></a>
+            <a href="#"><i class="ti-instagram"></i></a>
+            <a href="#"><i class="ti-pinterest-alt"></i></a>
+            <a href="#"><i class="ti-twitter"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+          </div>
+
+          <div class="copyright-word text-center">
+            <p>
+              Powered by
+              <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal ticket-->
     <div class="modal js-modal js-close">

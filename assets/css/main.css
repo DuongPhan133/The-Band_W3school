@@ -5,6 +5,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -496,6 +497,37 @@ html {
 .submit-control:hover {
   background-color: #ccc;
   color: #000;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer img {
+  width: 100%;
+}
+
+.footer-copyright {
+  padding: 64px 16px;
+}
+
+.copyright-icon a {
+  text-decoration: none;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.copyright-icon a:hover,
+.copyright-word p a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.copyright-word {
+  font-size: 15px;
+  padding: 15px 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.copyright-word a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 @keyframes modalShow {
