@@ -5,326 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="./icons/themify-icons-font/themify-icons/themify-icons.css"
-    />
-    <link rel="icon" href="/image/slider1/me.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    <div id="main">
-      <div id="header">
-        <!-- Begin: Nav -->
-        <ul id="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#band">Band</a></li>
-          <li><a href="#tour">Tour</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="#">
+    <main>
+      <!-- Begin: Header -->
+      <div class="header">
+        <ul class="header-nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Band</a></li>
+          <li><a href="">Tour</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="more-dropdown">
+            <a class="more-btn" href="">
               More
-              <ul class="nav-btn-down">
-                <i class="btn-down ti-angle-down"></i>
-              </ul>
+              <ion-icon class="drop-btn" name="caret-down-outline"></ion-icon>
             </a>
-            <ul class="subnav">
-              <li><a href="#">Merchandise</a></li>
-              <li><a href="#">Extras</a></li>
-              <li><a href="#">Media</a></li>
+
+            <ul class="more-ctn">
+              <li><a href="">Merchandise</a></li>
+              <li><a href="">Extras</a></li>
+              <li><a href="">Media</a></li>
             </ul>
           </li>
+          <span class="header-search">
+            <ion-icon class="search-btn" name="search"></ion-icon>
+          </span>
+          <div class="clear"></div>
         </ul>
-        <!-- End: Nav -->
-        <!-- Begin: Search -->
-        <div class="nav-btn-search">
-          <i class="btn-search ti-search"></i>
-        </div>
-        <!-- End: Search -->
       </div>
-      <!-- Begin: Slider -->
-      <div id="slider">
-        <div class="slider-content">
-          <h3 class="content-header">Chicago</h3>
-          <p class="content-sub">
-            Thank you, Chicago - A night we won't forget.
-          </p>
-        </div>
-      </div>
+      <!-- End: Header -->
+      <div class="slider"></div>
+      <div class="content"></div>
+      <div class="map"></div>
+      <div class="footer"></div>
+    </main>
 
-      <!-- Content -->
-      <div id="band" class="content-about">
-        <h2 class="content-heading">THE BAND</h2>
-        <p class="content-sub-heading">We love music</p>
-        <p class="content-text">
-          We have created a fictional band website. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
-        <div class="row-first content-list">
-          <div class="col-third text-center">
-            <div class="content-name">Name</div>
-            <img
-              src="./image/slider1/bandmember.jpg"
-              alt="Member"
-              class="content-img"
-            />
-          </div>
-
-          <div class="col-third text-center">
-            <div class="content-name">Name</div>
-            <img
-              src="./image/slider1/bandmember.jpg"
-              alt="Member"
-              class="content-img"
-            />
-          </div>
-
-          <div class="col-third text-center">
-            <div class="content-name">Name</div>
-            <img
-              src="./image/slider1/bandmember.jpg"
-              alt="Member"
-              class="content-img"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Tour -->
-      <div id="tour" class="tour-date">
-        <div class="content-about">
-          <h2 class="content-heading text-white">TOUR DATES</h2>
-          <p class="content-sub-heading text-white">
-            Remember to book your tickets!
-          </p>
-
-          <ul class="tour-month">
-            <li>September <span class="tour-sold-out">Sold out</span></li>
-            <li>October <span class="tour-sold-out">Sold out</span></li>
-            <li>November <span class="tour-qtt">3</span></li>
-          </ul>
-
-          <!-- Tour list -->
-          <div class="row-first tour-list">
-            <div class="col-first .col-third">
-              <img src="./image/slider1/place1.jpg" alt="" class="tour-img" />
-              <div class="tour-sub-img">
-                <div class="tour-heading">New York</div>
-                <div class="tour-time">Fri 27 Nov 2016</div>
-                <div class="tour-sub">
-                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                </div>
-                <div class="tour-btn">
-                  <i class="btn-ticket js-buy-ticket">Buy Tickets</i>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-first .col-third">
-              <img src="./image/slider1/place2.jpg" alt="" class="tour-img" />
-              <div class="tour-sub-img">
-                <div class="tour-heading">Paris</div>
-                <div class="tour-time">Sat 28 Nov 2016</div>
-                <div class="tour-sub">
-                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                </div>
-                <div class="tour-btn">
-                  <i class="btn-ticket js-buy-ticket">Buy Tickets</i>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-first .col-third">
-              <img src="./image/slider1/place3.jpg" alt="" class="tour-img" />
-              <div class="tour-sub-img">
-                <div class="tour-heading">San Francisco</div>
-                <div class="tour-time">Sun 29 Nov 2016</div>
-                <div class="tour-sub">
-                  Praesent tincidunt sed tellus ut rutrum sed vitae justo.
-                </div>
-                <div class="tour-btn">
-                  <i class="btn-ticket js-buy-ticket">Buy Tickets</i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End tour list -->
-        </div>
-      </div>
-
-      <!-- Contact list -->
-      <div id="contact" class="content-about">
-        <h2 class="content-heading">CONTACT</h2>
-        <p class="content-sub-heading">Fan? Drop a note!</p>
-
-        <!-- Form -->
-        <div class="row row-first">
-          <div class="col-half col-first contact-content">
-            <p class="info-icon"><i class="ti-location-pin"></i>Chicago, US</p>
-
-            <p class="info-icon">
-              <i class="ti-headphone"></i>Phone: +00 151515
-            </p>
-
-            <p class="info-icon">
-              <i class="ti-email"></i>Email: mail@mail.com
-            </p>
-          </div>
-
-          <div class="col-half col-first contact-form">
-            <form action="">
-              <div class="row-first form-padding">
-                <div class="col-half col-first">
-                  <input
-                    type="text"
-                    name="Name"
-                    placeholder="Name"
-                    id=""
-                    class="form-control"
-                  />
-                </div>
-
-                <div class="col-half col-first">
-                  <input
-                    type="email"
-                    name=""
-                    placeholder="Email"
-                    id=""
-                    class="form-control"
-                  />
-                </div>
-              </div>
-
-              <div class="row-first">
-                <div class="col-full col-first">
-                  <input
-                    type="text"
-                    name=""
-                    placeholder="Message"
-                    id=""
-                    class="form-control"
-                  />
-                </div>
-              </div>
-
-              <div class="contact-submit">
-                <input type="submit" value="SEND" class="submit-control" />
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- End Form -->
-      </div>
-
-      <!-- Footer -->
-      <div id="footer">
-        <div class="footer-map">
-          <img src="/image/slider1/map.jpg" alt="Map" />
-        </div>
-
-        <div class="footer-copyright">
-          <div class="copyright-icon text-center">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-youtube"></i></a>
-            <a href="#"><i class="ti-instagram"></i></a>
-            <a href="#"><i class="ti-pinterest-alt"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
-          </div>
-
-          <div class="copyright-word text-center">
-            <p>
-              Powered by
-              <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal ticket-->
-    <div class="modal js-modal js-close">
-      <div class="modal-containel js-container">
-        <!-- Modal header -->
-        <header class="modal-header">
-          <div class="ti-close js-close"></div>
-          <h3 class="modal-ticket">
-            <i class="ti-bag"></i>
-            Tickets
-          </h3>
-        </header>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p class="modal-label">
-            <i class="ti-shopping-cart"></i>Tickets, $15 per person
-          </p>
-
-          <input type="text" class="modal-qtt" placeholder="How many?" />
-
-          <p class="modal-label"><i class="ti-user"></i>Send To</p>
-
-          <input type="text" class="modal-email" placeholder="Enter email" />
-
-          <div class="modal-btn">
-            Pay
-            <i class="ti-check"></i>
-          </div>
-        </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <div class="footer-close js-close">
-            Close
-            <i class="footer-btn ti-close"></i>
-          </div>
-
-          <div class="footer-help">
-            Need
-            <a href="#" class="help">help?</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Script -->
-    <script>
-      //Lấy ra những thg nút nhấn gán vào 1 biến chung
-      const buyBtns = document.querySelectorAll(".js-buy-ticket");
-      const closeBtns = document.querySelectorAll(".js-close");
-      const modalContainer = document.querySelector(".js-container");
-
-      //Lấy tất modal ra bao gồm background & container
-      const modal = document.querySelector(".js-modal");
-
-      // Open & Close modal
-      function showBuyTickets() {
-        modal.classList.add("open"); // Open modal
-      }
-      function closeBuyTickets() {
-        modal.classList.remove("open"); // Close modal
-      }
-      function stop(event) {
-        event.stopPropagation();
-      }
-
-      // Su kien
-      for (const buyBtn of buyBtns) {
-        buyBtn.addEventListener("click", showBuyTickets);
-      }
-      for (const closeBtn of closeBtns) {
-        closeBtn.addEventListener("click", closeBuyTickets);
-      }
-      modalContainer.addEventListener("click", stop);
-    </script>
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
